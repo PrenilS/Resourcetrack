@@ -1,14 +1,16 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='workload_tracker',  # The name of your package
+    name='resourcetrack',  # The name of your package
     version='0.1.0',  # Version number
     packages=find_packages(),  # Automatically find all packages in this directory
     description='A package for tracking and recording system metrics during data science workloads.',  # Short description of the package
-    author='Your Name',  # Your name
-    author_email='your.email@example.com',  # Your contact email
+    author='Prenil Sewmohan',  # Your name
+    author_email='prenil.s@gmail.com',  # Your contact email
     install_requires=[
-        'psutil',  # List all dependencies here
+        'psutil',  # Dependency for system metrics
+        'matplotlib',  # Dependency for plotting graphs
+        'numpy',  # Dependency for numerical operations
     ],
     classifiers=[
         'Programming Language :: Python :: 3',
