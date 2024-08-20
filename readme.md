@@ -11,7 +11,15 @@ Workload Tracker is a Python package for tracking and recording system metrics d
 
 ## Installation
 
+### Install from GitHub
 ```bash
+pip install git+https://github.com/PrenilS/Resourcetrack.git  
+```
+
+### Clone and Install
+```bash
+git clone https://github.com/PrenilS/Resourcetrack.git  
+cd repository
 pip install .
 ```
 
