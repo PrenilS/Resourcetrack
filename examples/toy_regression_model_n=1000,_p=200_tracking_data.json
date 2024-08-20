@@ -1,0 +1,78 @@
+{
+    "test_description": "Toy Regression Model n=1000, p=200",
+    "start_time": "2024-08-20 21:21:50",
+    "system_info": {
+        "os": "Windows",
+        "os_version": "10.0.22621",
+        "machine": "AMD64",
+        "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+        "python_version": "3.9.7",
+        "cpu_count": 8,
+        "total_memory_gb": 15.74490737915039
+    },
+    "resource_stats": [
+        {
+            "timestamp": "2024-08-20 21:21:50",
+            "cpu_percent": 11.5,
+            "memory_percent": 72.8,
+            "disk_usage_percent": 71.4,
+            "swap_memory_percent": 85.6,
+            "disk_read_gigabytes": 83.65340185165405,
+            "disk_write_gigabytes": 125.5726671218872,
+            "net_gigabytes_sent": 0.9567912891507149,
+            "net_gigabytes_recv": 2.0505190631374717
+        }
+    ],
+    "end_time": "2024-08-20 21:21:50",
+    "total_time": 0.340537,
+    "summary_stats": {
+        "cpu_percent": {
+            "min": 11.5,
+            "max": 11.5,
+            "average": 11.5,
+            "median": 11.5
+        },
+        "memory_percent": {
+            "min": 72.8,
+            "max": 72.8,
+            "average": 72.8,
+            "median": 72.8
+        },
+        "disk_usage_percent": {
+            "min": 71.4,
+            "max": 71.4,
+            "average": 71.4,
+            "median": 71.4
+        },
+        "swap_memory_percent": {
+            "min": 85.6,
+            "max": 85.6,
+            "average": 85.6,
+            "median": 85.6
+        },
+        "disk_read_gigabytes": {
+            "min": 83.65340185165405,
+            "max": 83.65340185165405,
+            "average": 83.65340185165405,
+            "median": 83.65340185165405
+        },
+        "disk_write_gigabytes": {
+            "min": 125.5726671218872,
+            "max": 125.5726671218872,
+            "average": 125.5726671218872,
+            "median": 125.5726671218872
+        },
+        "net_gigabytes_sent": {
+            "min": 0.9567912891507149,
+            "max": 0.9567912891507149,
+            "average": 0.9567912891507149,
+            "median": 0.9567912891507149
+        },
+        "net_gigabytes_recv": {
+            "min": 2.0505190631374717,
+            "max": 2.0505190631374717,
+            "average": 2.0505190631374717,
+            "median": 2.0505190631374717
+        }
+    }
+}

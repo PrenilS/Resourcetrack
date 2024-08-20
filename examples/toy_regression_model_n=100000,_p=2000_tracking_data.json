@@ -1,0 +1,540 @@
+{
+    "test_description": "Toy Regression Model n=100000, p=2000",
+    "start_time": "2024-08-20 21:25:50",
+    "system_info": {
+        "os": "Windows",
+        "os_version": "10.0.22621",
+        "machine": "AMD64",
+        "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+        "python_version": "3.9.7",
+        "cpu_count": 8,
+        "total_memory_gb": 15.74490737915039
+    },
+    "resource_stats": [
+        {
+            "timestamp": "2024-08-20 21:25:50",
+            "cpu_percent": 12.5,
+            "memory_percent": 73.5,
+            "disk_usage_percent": 71.7,
+            "swap_memory_percent": 85.2,
+            "disk_read_gigabytes": 83.72074842453003,
+            "disk_write_gigabytes": 125.64321374893188,
+            "net_gigabytes_sent": 0.957684563472867,
+            "net_gigabytes_recv": 2.0524553898721933
+        },
+        {
+            "timestamp": "2024-08-20 21:25:51",
+            "cpu_percent": 9.0,
+            "memory_percent": 74.4,
+            "disk_usage_percent": 71.7,
+            "swap_memory_percent": 85.3,
+            "disk_read_gigabytes": 83.72074842453003,
+            "disk_write_gigabytes": 125.64322090148926,
+            "net_gigabytes_sent": 0.9576858161017299,
+            "net_gigabytes_recv": 2.052457559853792
+        },
+        {
+            "timestamp": "2024-08-20 21:25:52",
+            "cpu_percent": 36.3,
+            "memory_percent": 75.2,
+            "disk_usage_percent": 71.7,
+            "swap_memory_percent": 85.4,
+            "disk_read_gigabytes": 83.72081470489502,
+            "disk_write_gigabytes": 125.64322090148926,
+            "net_gigabytes_sent": 0.9576873602345586,
+            "net_gigabytes_recv": 2.052458994090557
+        },
+        {
+            "timestamp": "2024-08-20 21:25:53",
+            "cpu_percent": 15.6,
+            "memory_percent": 75.7,
+            "disk_usage_percent": 71.7,
+            "swap_memory_percent": 85.3,
+            "disk_read_gigabytes": 83.72586297988892,
+            "disk_write_gigabytes": 125.64336585998535,
+            "net_gigabytes_sent": 0.9576879693195224,
+            "net_gigabytes_recv": 2.0524603947997093
+        },
+        {
+            "timestamp": "2024-08-20 21:25:54",
+            "cpu_percent": 12.5,
+            "memory_percent": 76.4,
+            "disk_usage_percent": 71.7,
+            "swap_memory_percent": 85.4,
+            "disk_read_gigabytes": 83.72618961334229,
+            "disk_write_gigabytes": 125.64352035522461,
+            "net_gigabytes_sent": 0.9576949663460255,
+            "net_gigabytes_recv": 2.052461525425315
+        },
+        {
+            "timestamp": "2024-08-20 21:25:55",
+            "cpu_percent": 15.0,
+            "memory_percent": 77.0,
+            "disk_usage_percent": 71.7,
+            "swap_memory_percent": 85.3,
+            "disk_read_gigabytes": 83.72636938095093,
+            "disk_write_gigabytes": 125.64359617233276,
+            "net_gigabytes_sent": 0.9576949663460255,
+            "net_gigabytes_recv": 2.0524617806077003
+        },
+        {
+            "timestamp": "2024-08-20 21:25:56",
+            "cpu_percent": 13.6,
+            "memory_percent": 77.5,
+            "disk_usage_percent": 71.7,
+            "swap_memory_percent": 85.3,
+            "disk_read_gigabytes": 83.72638463973999,
+            "disk_write_gigabytes": 125.64393424987793,
+            "net_gigabytes_sent": 0.9576953677460551,
+            "net_gigabytes_recv": 2.052462223917246
+        },
+        {
+            "timestamp": "2024-08-20 21:25:57",
+            "cpu_percent": 14.7,
+            "memory_percent": 78.2,
+            "disk_usage_percent": 71.7,
+            "swap_memory_percent": 85.4,
+            "disk_read_gigabytes": 83.72638463973999,
+            "disk_write_gigabytes": 125.6440486907959,
+            "net_gigabytes_sent": 0.9576959880068898,
+            "net_gigabytes_recv": 2.0524635929614305
+        },
+        {
+            "timestamp": "2024-08-20 21:25:58",
+            "cpu_percent": 15.3,
+            "memory_percent": 78.7,
+            "disk_usage_percent": 71.7,
+            "swap_memory_percent": 85.3,
+            "disk_read_gigabytes": 83.72878170013428,
+            "disk_write_gigabytes": 125.64410305023193,
+            "net_gigabytes_sent": 0.9576964005827904,
+            "net_gigabytes_recv": 2.0524640772491693
+        },
+        {
+            "timestamp": "2024-08-20 21:25:59",
+            "cpu_percent": 24.4,
+            "memory_percent": 79.3,
+            "disk_usage_percent": 71.7,
+            "swap_memory_percent": 85.3,
+            "disk_read_gigabytes": 83.7292537689209,
+            "disk_write_gigabytes": 125.64433097839355,
+            "net_gigabytes_sent": 0.9576968066394329,
+            "net_gigabytes_recv": 2.052464595064521
+        },
+        {
+            "timestamp": "2024-08-20 21:26:00",
+            "cpu_percent": 28.8,
+            "memory_percent": 79.9,
+            "disk_usage_percent": 71.7,
+            "swap_memory_percent": 85.5,
+            "disk_read_gigabytes": 83.72927665710449,
+            "disk_write_gigabytes": 125.64441156387329,
+            "net_gigabytes_sent": 0.957701263949275,
+            "net_gigabytes_recv": 2.0524648502469063
+        },
+        {
+            "timestamp": "2024-08-20 21:26:01",
+            "cpu_percent": 15.4,
+            "memory_percent": 80.6,
+            "disk_usage_percent": 71.7,
+            "swap_memory_percent": 85.5,
+            "disk_read_gigabytes": 83.72931480407715,
+            "disk_write_gigabytes": 125.64451551437378,
+            "net_gigabytes_sent": 0.9577016606926918,
+            "net_gigabytes_recv": 2.052465943619609
+        },
+        {
+            "timestamp": "2024-08-20 21:26:03",
+            "cpu_percent": 16.7,
+            "memory_percent": 81.1,
+            "disk_usage_percent": 71.7,
+            "swap_memory_percent": 85.6,
+            "disk_read_gigabytes": 83.72931480407715,
+            "disk_write_gigabytes": 125.64467573165894,
+            "net_gigabytes_sent": 0.95770513266325,
+            "net_gigabytes_recv": 2.0524671161547303
+        },
+        {
+            "timestamp": "2024-08-20 21:26:04",
+            "cpu_percent": 16.2,
+            "memory_percent": 81.4,
+            "disk_usage_percent": 71.7,
+            "swap_memory_percent": 85.3,
+            "disk_read_gigabytes": 83.72970008850098,
+            "disk_write_gigabytes": 125.64476585388184,
+            "net_gigabytes_sent": 0.9577053086832166,
+            "net_gigabytes_recv": 2.052467457950115
+        },
+        {
+            "timestamp": "2024-08-20 21:26:05",
+            "cpu_percent": 10.5,
+            "memory_percent": 82.1,
+            "disk_usage_percent": 71.7,
+            "swap_memory_percent": 85.3,
+            "disk_read_gigabytes": 83.72982978820801,
+            "disk_write_gigabytes": 125.64514398574829,
+            "net_gigabytes_sent": 0.9577060965821147,
+            "net_gigabytes_recv": 2.0524682495743036
+        },
+        {
+            "timestamp": "2024-08-20 21:26:06",
+            "cpu_percent": 11.0,
+            "memory_percent": 82.8,
+            "disk_usage_percent": 71.7,
+            "swap_memory_percent": 85.4,
+            "disk_read_gigabytes": 83.7300353050232,
+            "disk_write_gigabytes": 125.64556741714478,
+            "net_gigabytes_sent": 0.9577203448861837,
+            "net_gigabytes_recv": 2.052469842135906
+        },
+        {
+            "timestamp": "2024-08-20 21:26:07",
+            "cpu_percent": 16.0,
+            "memory_percent": 89.4,
+            "disk_usage_percent": 71.7,
+            "swap_memory_percent": 89.9,
+            "disk_read_gigabytes": 83.73029088973999,
+            "disk_write_gigabytes": 125.64568519592285,
+            "net_gigabytes_sent": 0.9577239779755473,
+            "net_gigabytes_recv": 2.0524772936478257
+        },
+        {
+            "timestamp": "2024-08-20 21:26:08",
+            "cpu_percent": 39.5,
+            "memory_percent": 82.7,
+            "disk_usage_percent": 72.0,
+            "swap_memory_percent": 87.2,
+            "disk_read_gigabytes": 83.73034429550171,
+            "disk_write_gigabytes": 125.65741157531738,
+            "net_gigabytes_sent": 0.9577293302863836,
+            "net_gigabytes_recv": 2.052484537474811
+        },
+        {
+            "timestamp": "2024-08-20 21:26:09",
+            "cpu_percent": 21.1,
+            "memory_percent": 83.6,
+            "disk_usage_percent": 72.0,
+            "swap_memory_percent": 87.2,
+            "disk_read_gigabytes": 83.7303900718689,
+            "disk_write_gigabytes": 125.66634225845337,
+            "net_gigabytes_sent": 0.957733410410583,
+            "net_gigabytes_recv": 2.0524941282346845
+        },
+        {
+            "timestamp": "2024-08-20 21:26:10",
+            "cpu_percent": 13.0,
+            "memory_percent": 84.5,
+            "disk_usage_percent": 72.0,
+            "swap_memory_percent": 87.2,
+            "disk_read_gigabytes": 83.730477809906,
+            "disk_write_gigabytes": 125.67552328109741,
+            "net_gigabytes_sent": 0.957737579010427,
+            "net_gigabytes_recv": 2.052502349950373
+        },
+        {
+            "timestamp": "2024-08-20 21:26:11",
+            "cpu_percent": 15.2,
+            "memory_percent": 85.3,
+            "disk_usage_percent": 72.0,
+            "swap_memory_percent": 87.1,
+            "disk_read_gigabytes": 83.73050832748413,
+            "disk_write_gigabytes": 125.68368148803711,
+            "net_gigabytes_sent": 0.9577411701902747,
+            "net_gigabytes_recv": 2.0525038968771696
+        },
+        {
+            "timestamp": "2024-08-20 21:26:12",
+            "cpu_percent": 13.8,
+            "memory_percent": 86.1,
+            "disk_usage_percent": 72.0,
+            "swap_memory_percent": 87.1,
+            "disk_read_gigabytes": 83.73050832748413,
+            "disk_write_gigabytes": 125.707275390625,
+            "net_gigabytes_sent": 0.957741373218596,
+            "net_gigabytes_recv": 2.05250490270555
+        },
+        {
+            "timestamp": "2024-08-20 21:26:13",
+            "cpu_percent": 23.9,
+            "memory_percent": 84.8,
+            "disk_usage_percent": 72.0,
+            "swap_memory_percent": 87.1,
+            "disk_read_gigabytes": 83.7305235862732,
+            "disk_write_gigabytes": 126.06091260910034,
+            "net_gigabytes_sent": 0.9577444512397051,
+            "net_gigabytes_recv": 2.052505496889353
+        },
+        {
+            "timestamp": "2024-08-20 21:26:14",
+            "cpu_percent": 25.7,
+            "memory_percent": 84.1,
+            "disk_usage_percent": 72.0,
+            "swap_memory_percent": 87.2,
+            "disk_read_gigabytes": 83.73067617416382,
+            "disk_write_gigabytes": 126.32878923416138,
+            "net_gigabytes_sent": 0.9577445993199944,
+            "net_gigabytes_recv": 2.0525060454383492
+        },
+        {
+            "timestamp": "2024-08-20 21:26:16",
+            "cpu_percent": 17.3,
+            "memory_percent": 85.1,
+            "disk_usage_percent": 72.0,
+            "swap_memory_percent": 87.3,
+            "disk_read_gigabytes": 83.73067617416382,
+            "disk_write_gigabytes": 126.32885408401489,
+            "net_gigabytes_sent": 0.9577445993199944,
+            "net_gigabytes_recv": 2.0525063006207347
+        },
+        {
+            "timestamp": "2024-08-20 21:26:17",
+            "cpu_percent": 10.3,
+            "memory_percent": 85.9,
+            "disk_usage_percent": 72.0,
+            "swap_memory_percent": 87.2,
+            "disk_read_gigabytes": 83.73069143295288,
+            "disk_write_gigabytes": 126.32890796661377,
+            "net_gigabytes_sent": 0.9577476158738136,
+            "net_gigabytes_recv": 2.052507581189275
+        },
+        {
+            "timestamp": "2024-08-20 21:26:18",
+            "cpu_percent": 9.2,
+            "memory_percent": 86.9,
+            "disk_usage_percent": 72.0,
+            "swap_memory_percent": 87.2,
+            "disk_read_gigabytes": 83.73069143295288,
+            "disk_write_gigabytes": 126.3289384841919,
+            "net_gigabytes_sent": 0.957747794687748,
+            "net_gigabytes_recv": 2.0525083178654313
+        },
+        {
+            "timestamp": "2024-08-20 21:26:19",
+            "cpu_percent": 11.1,
+            "memory_percent": 87.5,
+            "disk_usage_percent": 72.0,
+            "swap_memory_percent": 87.2,
+            "disk_read_gigabytes": 83.73069143295288,
+            "disk_write_gigabytes": 126.32909488677979,
+            "net_gigabytes_sent": 0.957747794687748,
+            "net_gigabytes_recv": 2.0525085171684623
+        },
+        {
+            "timestamp": "2024-08-20 21:26:20",
+            "cpu_percent": 13.2,
+            "memory_percent": 87.6,
+            "disk_usage_percent": 72.0,
+            "swap_memory_percent": 87.2,
+            "disk_read_gigabytes": 83.73090505599976,
+            "disk_write_gigabytes": 126.3292179107666,
+            "net_gigabytes_sent": 0.9577498370781541,
+            "net_gigabytes_recv": 2.0525172371417284
+        },
+        {
+            "timestamp": "2024-08-20 21:26:21",
+            "cpu_percent": 7.8,
+            "memory_percent": 87.7,
+            "disk_usage_percent": 72.0,
+            "swap_memory_percent": 87.3,
+            "disk_read_gigabytes": 83.73098134994507,
+            "disk_write_gigabytes": 126.32939720153809,
+            "net_gigabytes_sent": 0.9577506287023425,
+            "net_gigabytes_recv": 2.052518593147397
+        },
+        {
+            "timestamp": "2024-08-20 21:26:22",
+            "cpu_percent": 10.1,
+            "memory_percent": 78.3,
+            "disk_usage_percent": 72.0,
+            "swap_memory_percent": 82.8,
+            "disk_read_gigabytes": 83.73098134994507,
+            "disk_write_gigabytes": 126.32943391799927,
+            "net_gigabytes_sent": 0.9577507814392447,
+            "net_gigabytes_recv": 2.052519615739584
+        },
+        {
+            "timestamp": "2024-08-20 21:26:23",
+            "cpu_percent": 8.8,
+            "memory_percent": 87.6,
+            "disk_usage_percent": 72.0,
+            "swap_memory_percent": 87.2,
+            "disk_read_gigabytes": 83.73098134994507,
+            "disk_write_gigabytes": 126.32943391799927,
+            "net_gigabytes_sent": 0.9577511418610811,
+            "net_gigabytes_recv": 2.052520088851452
+        },
+        {
+            "timestamp": "2024-08-20 21:26:24",
+            "cpu_percent": 25.3,
+            "memory_percent": 87.6,
+            "disk_usage_percent": 72.1,
+            "swap_memory_percent": 91.7,
+            "disk_read_gigabytes": 83.7311339378357,
+            "disk_write_gigabytes": 126.32944345474243,
+            "net_gigabytes_sent": 0.9577518859878182,
+            "net_gigabytes_recv": 2.0525206569582224
+        },
+        {
+            "timestamp": "2024-08-20 21:26:25",
+            "cpu_percent": 20.9,
+            "memory_percent": 88.6,
+            "disk_usage_percent": 72.3,
+            "swap_memory_percent": 89.0,
+            "disk_read_gigabytes": 83.7311339378357,
+            "disk_write_gigabytes": 126.32954025268555,
+            "net_gigabytes_sent": 0.9577573360875249,
+            "net_gigabytes_recv": 2.052527348510921
+        },
+        {
+            "timestamp": "2024-08-20 21:26:26",
+            "cpu_percent": 11.4,
+            "memory_percent": 89.5,
+            "disk_usage_percent": 72.3,
+            "swap_memory_percent": 89.0,
+            "disk_read_gigabytes": 83.73175239562988,
+            "disk_write_gigabytes": 126.3296012878418,
+            "net_gigabytes_sent": 0.9577577197924256,
+            "net_gigabytes_recv": 2.052529873326421
+        },
+        {
+            "timestamp": "2024-08-20 21:26:27",
+            "cpu_percent": 10.9,
+            "memory_percent": 90.5,
+            "disk_usage_percent": 72.3,
+            "swap_memory_percent": 88.9,
+            "disk_read_gigabytes": 83.73182106018066,
+            "disk_write_gigabytes": 126.32976007461548,
+            "net_gigabytes_sent": 0.9577633859589696,
+            "net_gigabytes_recv": 2.0525351082906127
+        },
+        {
+            "timestamp": "2024-08-20 21:26:29",
+            "cpu_percent": 16.4,
+            "memory_percent": 91.7,
+            "disk_usage_percent": 72.3,
+            "swap_memory_percent": 89.0,
+            "disk_read_gigabytes": 83.73286628723145,
+            "disk_write_gigabytes": 126.32998514175415,
+            "net_gigabytes_sent": 0.957767360843718,
+            "net_gigabytes_recv": 2.0525379134342074
+        },
+        {
+            "timestamp": "2024-08-20 21:26:30",
+            "cpu_percent": 18.5,
+            "memory_percent": 92.7,
+            "disk_usage_percent": 72.3,
+            "swap_memory_percent": 89.0,
+            "disk_read_gigabytes": 83.73359632492065,
+            "disk_write_gigabytes": 126.33246326446533,
+            "net_gigabytes_sent": 0.9577680267393589,
+            "net_gigabytes_recv": 2.052538470365107
+        },
+        {
+            "timestamp": "2024-08-20 21:26:31",
+            "cpu_percent": 16.2,
+            "memory_percent": 93.7,
+            "disk_usage_percent": 72.3,
+            "swap_memory_percent": 89.0,
+            "disk_read_gigabytes": 83.7336916923523,
+            "disk_write_gigabytes": 126.33274126052856,
+            "net_gigabytes_sent": 0.9577682996168733,
+            "net_gigabytes_recv": 2.052538770250976
+        },
+        {
+            "timestamp": "2024-08-20 21:26:32",
+            "cpu_percent": 18.3,
+            "memory_percent": 94.7,
+            "disk_usage_percent": 72.3,
+            "swap_memory_percent": 89.1,
+            "disk_read_gigabytes": 83.73465061187744,
+            "disk_write_gigabytes": 126.33763599395752,
+            "net_gigabytes_sent": 0.9577716626226902,
+            "net_gigabytes_recv": 2.0525403283536434
+        },
+        {
+            "timestamp": "2024-08-20 21:26:33",
+            "cpu_percent": 14.9,
+            "memory_percent": 95.4,
+            "disk_usage_percent": 72.3,
+            "swap_memory_percent": 89.0,
+            "disk_read_gigabytes": 83.73480892181396,
+            "disk_write_gigabytes": 126.34011459350586,
+            "net_gigabytes_sent": 0.9577720640227199,
+            "net_gigabytes_recv": 2.0525408796966076
+        },
+        {
+            "timestamp": "2024-08-20 21:26:34",
+            "cpu_percent": 17.5,
+            "memory_percent": 96.0,
+            "disk_usage_percent": 72.3,
+            "swap_memory_percent": 89.0,
+            "disk_read_gigabytes": 83.73512554168701,
+            "disk_write_gigabytes": 126.37749481201172,
+            "net_gigabytes_sent": 0.9577760240063071,
+            "net_gigabytes_recv": 2.052546238526702
+        },
+        {
+            "timestamp": "2024-08-20 21:27:20",
+            "cpu_percent": 40.3,
+            "memory_percent": 87.1,
+            "disk_usage_percent": 72.3,
+            "swap_memory_percent": 84.8,
+            "disk_read_gigabytes": 83.91736459732056,
+            "disk_write_gigabytes": 126.3857011795044,
+            "net_gigabytes_sent": 0.957846905104816,
+            "net_gigabytes_recv": 2.0526527175679803
+        }
+    ],
+    "end_time": "2024-08-20 21:27:20",
+    "total_time": 90.375179,
+    "summary_stats": {
+        "cpu_percent": {
+            "min": 7.8,
+            "max": 40.3,
+            "average": 17.072093023255814,
+            "median": 15.3
+        },
+        "memory_percent": {
+            "min": 73.5,
+            "max": 96.0,
+            "average": 84.3813953488372,
+            "median": 84.8
+        },
+        "disk_usage_percent": {
+            "min": 71.7,
+            "max": 72.3,
+            "average": 71.95348837209302,
+            "median": 72.0
+        },
+        "swap_memory_percent": {
+            "min": 82.8,
+            "max": 91.7,
+            "average": 86.9,
+            "median": 87.2
+        },
+        "disk_read_gigabytes": {
+            "min": 83.72074842453003,
+            "max": 83.91736459732056,
+            "average": 83.73412265334018,
+            "median": 83.73050832748413
+        },
+        "disk_write_gigabytes": {
+            "min": 125.64321374893188,
+            "max": 126.3857011795044,
+            "average": 125.97951199287591,
+            "median": 125.707275390625
+        },
+        "net_gigabytes_sent": {
+            "min": 0.957684563472867,
+            "max": 0.957846905104816,
+            "average": 0.9577336457752904,
+            "median": 0.957741373218596
+        },
+        "net_gigabytes_recv": {
+            "min": 2.0524553898721933,
+            "max": 2.0526527175679803,
+            "average": 2.0525001581801576,
+            "median": 2.05250490270555
+        }
+    }
+}
