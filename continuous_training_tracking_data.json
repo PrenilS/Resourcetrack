@@ -1,0 +1,406 @@
+{
+    "test_description": "Toy Regression Model Training with Continuous Tracking",
+    "start_time": "2024-08-20 20:27:48",
+    "system_info": {
+        "os": "Windows",
+        "os_version": "10.0.22621",
+        "machine": "AMD64",
+        "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+        "python_version": "3.9.7",
+        "cpu_count": 8,
+        "total_memory": 16905965568
+    },
+    "resource_stats": [
+        {
+            "cpu_percent": 11.9,
+            "memory_percent": 79.0,
+            "disk_usage_percent": 71.2,
+            "swap_memory_percent": 90.0,
+            "disk_read_bytes": 87727265280,
+            "disk_write_bytes": 132789324288,
+            "net_bytes_sent": 1012082922,
+            "net_bytes_recv": 2110008967
+        },
+        {
+            "cpu_percent": 11.0,
+            "memory_percent": 80.0,
+            "disk_usage_percent": 71.2,
+            "swap_memory_percent": 90.0,
+            "disk_read_bytes": 87727267328,
+            "disk_write_bytes": 132789352960,
+            "net_bytes_sent": 1012099213,
+            "net_bytes_recv": 2110030187
+        },
+        {
+            "cpu_percent": 14.0,
+            "memory_percent": 80.4,
+            "disk_usage_percent": 71.4,
+            "swap_memory_percent": 87.0,
+            "disk_read_bytes": 87727271424,
+            "disk_write_bytes": 132789352960,
+            "net_bytes_sent": 1012100326,
+            "net_bytes_recv": 2110033702
+        },
+        {
+            "cpu_percent": 11.4,
+            "memory_percent": 81.6,
+            "disk_usage_percent": 71.4,
+            "swap_memory_percent": 86.9,
+            "disk_read_bytes": 87727271424,
+            "disk_write_bytes": 132789389312,
+            "net_bytes_sent": 1012109057,
+            "net_bytes_recv": 2110040143
+        },
+        {
+            "cpu_percent": 14.4,
+            "memory_percent": 82.4,
+            "disk_usage_percent": 71.4,
+            "swap_memory_percent": 87.0,
+            "disk_read_bytes": 87728324096,
+            "disk_write_bytes": 132790771200,
+            "net_bytes_sent": 1012109983,
+            "net_bytes_recv": 2110042223
+        },
+        {
+            "cpu_percent": 12.9,
+            "memory_percent": 83.4,
+            "disk_usage_percent": 71.4,
+            "swap_memory_percent": 86.9,
+            "disk_read_bytes": 87728324096,
+            "disk_write_bytes": 132790788096,
+            "net_bytes_sent": 1012110637,
+            "net_bytes_recv": 2110043491
+        },
+        {
+            "cpu_percent": 13.7,
+            "memory_percent": 84.3,
+            "disk_usage_percent": 71.4,
+            "swap_memory_percent": 86.8,
+            "disk_read_bytes": 87729344000,
+            "disk_write_bytes": 132791160832,
+            "net_bytes_sent": 1012110922,
+            "net_bytes_recv": 2110043725
+        },
+        {
+            "cpu_percent": 11.3,
+            "memory_percent": 85.2,
+            "disk_usage_percent": 71.4,
+            "swap_memory_percent": 86.8,
+            "disk_read_bytes": 87730021376,
+            "disk_write_bytes": 132791160832,
+            "net_bytes_sent": 1012111019,
+            "net_bytes_recv": 2110044338
+        },
+        {
+            "cpu_percent": 10.8,
+            "memory_percent": 86.3,
+            "disk_usage_percent": 71.4,
+            "swap_memory_percent": 86.8,
+            "disk_read_bytes": 87730202624,
+            "disk_write_bytes": 132791456256,
+            "net_bytes_sent": 1012111100,
+            "net_bytes_recv": 2110044979
+        },
+        {
+            "cpu_percent": 11.9,
+            "memory_percent": 87.3,
+            "disk_usage_percent": 71.4,
+            "swap_memory_percent": 86.8,
+            "disk_read_bytes": 87730785792,
+            "disk_write_bytes": 132791891968,
+            "net_bytes_sent": 1012111874,
+            "net_bytes_recv": 2110046007
+        },
+        {
+            "cpu_percent": 18.5,
+            "memory_percent": 88.6,
+            "disk_usage_percent": 71.4,
+            "swap_memory_percent": 87.3,
+            "disk_read_bytes": 87731092992,
+            "disk_write_bytes": 132792133120,
+            "net_bytes_sent": 1012111874,
+            "net_bytes_recv": 2110046144
+        },
+        {
+            "cpu_percent": 13.7,
+            "memory_percent": 88.6,
+            "disk_usage_percent": 71.4,
+            "swap_memory_percent": 92.2,
+            "disk_read_bytes": 87731092992,
+            "disk_write_bytes": 132792153600,
+            "net_bytes_sent": 1012111951,
+            "net_bytes_recv": 2110046702
+        },
+        {
+            "cpu_percent": 16.8,
+            "memory_percent": 91.3,
+            "disk_usage_percent": 71.6,
+            "swap_memory_percent": 89.2,
+            "disk_read_bytes": 87731864576,
+            "disk_write_bytes": 132792747520,
+            "net_bytes_sent": 1012112089,
+            "net_bytes_recv": 2110047333
+        },
+        {
+            "cpu_percent": 20.4,
+            "memory_percent": 93.1,
+            "disk_usage_percent": 71.6,
+            "swap_memory_percent": 89.2,
+            "disk_read_bytes": 87732859904,
+            "disk_write_bytes": 132805783552,
+            "net_bytes_sent": 1012112334,
+            "net_bytes_recv": 2110047787
+        },
+        {
+            "cpu_percent": 33.0,
+            "memory_percent": 93.0,
+            "disk_usage_percent": 71.6,
+            "swap_memory_percent": 89.1,
+            "disk_read_bytes": 87733590528,
+            "disk_write_bytes": 133148053504,
+            "net_bytes_sent": 1012113105,
+            "net_bytes_recv": 2110050249
+        },
+        {
+            "cpu_percent": 23.9,
+            "memory_percent": 95.0,
+            "disk_usage_percent": 71.6,
+            "swap_memory_percent": 89.1,
+            "disk_read_bytes": 87733795328,
+            "disk_write_bytes": 133157490688,
+            "net_bytes_sent": 1012113413,
+            "net_bytes_recv": 2110050880
+        },
+        {
+            "cpu_percent": 27.5,
+            "memory_percent": 85.2,
+            "disk_usage_percent": 71.6,
+            "swap_memory_percent": 89.0,
+            "disk_read_bytes": 87733946880,
+            "disk_write_bytes": 133165978624,
+            "net_bytes_sent": 1012113719,
+            "net_bytes_recv": 2110051601
+        },
+        {
+            "cpu_percent": 22.0,
+            "memory_percent": 87.7,
+            "disk_usage_percent": 71.6,
+            "swap_memory_percent": 88.9,
+            "disk_read_bytes": 87734951936,
+            "disk_write_bytes": 133169337344,
+            "net_bytes_sent": 1012114030,
+            "net_bytes_recv": 2110052575
+        },
+        {
+            "cpu_percent": 24.3,
+            "memory_percent": 90.7,
+            "disk_usage_percent": 71.6,
+            "swap_memory_percent": 88.9,
+            "disk_read_bytes": 87734996992,
+            "disk_write_bytes": 133173919232,
+            "net_bytes_sent": 1012114474,
+            "net_bytes_recv": 2110053160
+        },
+        {
+            "cpu_percent": 23.1,
+            "memory_percent": 93.4,
+            "disk_usage_percent": 71.6,
+            "swap_memory_percent": 88.9,
+            "disk_read_bytes": 87734996992,
+            "disk_write_bytes": 133180437504,
+            "net_bytes_sent": 1012114528,
+            "net_bytes_recv": 2110053434
+        },
+        {
+            "cpu_percent": 22.3,
+            "memory_percent": 84.7,
+            "disk_usage_percent": 71.6,
+            "swap_memory_percent": 84.2,
+            "disk_read_bytes": 87735029760,
+            "disk_write_bytes": 133193032704,
+            "net_bytes_sent": 1012114528,
+            "net_bytes_recv": 2110053708
+        },
+        {
+            "cpu_percent": 19.1,
+            "memory_percent": 86.8,
+            "disk_usage_percent": 71.6,
+            "swap_memory_percent": 89.1,
+            "disk_read_bytes": 87735062528,
+            "disk_write_bytes": 133202583552,
+            "net_bytes_sent": 1012114660,
+            "net_bytes_recv": 2110054469
+        },
+        {
+            "cpu_percent": 11.4,
+            "memory_percent": 94.7,
+            "disk_usage_percent": 71.6,
+            "swap_memory_percent": 89.2,
+            "disk_read_bytes": 87735128064,
+            "disk_write_bytes": 133211647488,
+            "net_bytes_sent": 1012114792,
+            "net_bytes_recv": 2110055093
+        },
+        {
+            "cpu_percent": 25.2,
+            "memory_percent": 92.9,
+            "disk_usage_percent": 71.6,
+            "swap_memory_percent": 89.2,
+            "disk_read_bytes": 87735156736,
+            "disk_write_bytes": 133539767808,
+            "net_bytes_sent": 1012115212,
+            "net_bytes_recv": 2110055979
+        },
+        {
+            "cpu_percent": 44.9,
+            "memory_percent": 93.0,
+            "disk_usage_percent": 71.7,
+            "swap_memory_percent": 90.3,
+            "disk_read_bytes": 87742375424,
+            "disk_write_bytes": 133745512448,
+            "net_bytes_sent": 1012115469,
+            "net_bytes_recv": 2110056630
+        },
+        {
+            "cpu_percent": 29.8,
+            "memory_percent": 93.9,
+            "disk_usage_percent": 72.0,
+            "swap_memory_percent": 88.7,
+            "disk_read_bytes": 87749689856,
+            "disk_write_bytes": 133746347520,
+            "net_bytes_sent": 1012115511,
+            "net_bytes_recv": 2110056946
+        },
+        {
+            "cpu_percent": 35.2,
+            "memory_percent": 96.4,
+            "disk_usage_percent": 72.0,
+            "swap_memory_percent": 88.8,
+            "disk_read_bytes": 87758624256,
+            "disk_write_bytes": 133750803968,
+            "net_bytes_sent": 1012119574,
+            "net_bytes_recv": 2110058427
+        },
+        {
+            "cpu_percent": 15.9,
+            "memory_percent": 97.5,
+            "disk_usage_percent": 72.0,
+            "swap_memory_percent": 88.7,
+            "disk_read_bytes": 87760591872,
+            "disk_write_bytes": 133755131392,
+            "net_bytes_sent": 1012120161,
+            "net_bytes_recv": 2110059225
+        },
+        {
+            "cpu_percent": 15.1,
+            "memory_percent": 97.5,
+            "disk_usage_percent": 72.0,
+            "swap_memory_percent": 88.7,
+            "disk_read_bytes": 87761513472,
+            "disk_write_bytes": 133755291648,
+            "net_bytes_sent": 1012120887,
+            "net_bytes_recv": 2110059945
+        },
+        {
+            "cpu_percent": 21.8,
+            "memory_percent": 97.4,
+            "disk_usage_percent": 72.0,
+            "swap_memory_percent": 88.6,
+            "disk_read_bytes": 87766303232,
+            "disk_write_bytes": 133755557376,
+            "net_bytes_sent": 1012121198,
+            "net_bytes_recv": 2110060586
+        },
+        {
+            "cpu_percent": 31.5,
+            "memory_percent": 97.3,
+            "disk_usage_percent": 72.0,
+            "swap_memory_percent": 88.5,
+            "disk_read_bytes": 87784481280,
+            "disk_write_bytes": 133755857408,
+            "net_bytes_sent": 1012189780,
+            "net_bytes_recv": 2110154601
+        },
+        {
+            "cpu_percent": 37.1,
+            "memory_percent": 97.1,
+            "disk_usage_percent": 72.0,
+            "swap_memory_percent": 88.7,
+            "disk_read_bytes": 87797513728,
+            "disk_write_bytes": 133756779008,
+            "net_bytes_sent": 1012198730,
+            "net_bytes_recv": 2110165667
+        },
+        {
+            "cpu_percent": 13.5,
+            "memory_percent": 98.8,
+            "disk_usage_percent": 72.0,
+            "swap_memory_percent": 88.6,
+            "disk_read_bytes": 87798128128,
+            "disk_write_bytes": 133757063680,
+            "net_bytes_sent": 1012203413,
+            "net_bytes_recv": 2110188809
+        },
+        {
+            "cpu_percent": 50.9,
+            "memory_percent": 99.8,
+            "disk_usage_percent": 72.0,
+            "swap_memory_percent": 88.8,
+            "disk_read_bytes": 87801413632,
+            "disk_write_bytes": 133757582336,
+            "net_bytes_sent": 1012207118,
+            "net_bytes_recv": 2110201687
+        }
+    ],
+    "end_time": "2024-08-20 20:28:32",
+    "summary_stats": {
+        "cpu_percent": {
+            "min": 10.8,
+            "max": 50.9,
+            "average": 21.18235294117647,
+            "median": 18.8
+        },
+        "memory_percent": {
+            "min": 79.0,
+            "max": 99.8,
+            "average": 90.12647058823529,
+            "median": 91.0
+        },
+        "disk_usage_percent": {
+            "min": 71.2,
+            "max": 72.0,
+            "average": 71.62647058823529,
+            "median": 71.6
+        },
+        "swap_memory_percent": {
+            "min": 84.2,
+            "max": 92.2,
+            "average": 88.43823529411765,
+            "median": 88.75
+        },
+        "disk_read_bytes": {
+            "min": 87727265280,
+            "max": 87801413632,
+            "average": 87743537603.76471,
+            "median": 87734449408.0
+        },
+        "disk_write_bytes": {
+            "min": 132789324288,
+            "max": 133757582336,
+            "average": 133198989462.58824,
+            "median": 133167657984.0
+        },
+        "net_bytes_sent": {
+            "min": 1012082922,
+            "max": 1012207118,
+            "average": 1012122341.2647059,
+            "median": 1012113874.5
+        },
+        "net_bytes_recv": {
+            "min": 2110008967,
+            "max": 2110201687,
+            "average": 2110063511.735294,
+            "median": 2110052088.0
+        }
+    }
+}
