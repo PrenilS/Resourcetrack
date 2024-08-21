@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='resourcetrack',  # The name of your package
-    version='0.1.0',  # Version number
+    version='0.1.1',  # Version number
     packages=find_packages(),  # Automatically find all packages in this directory
     description='A package for tracking and recording system metrics during data science workloads.',  # Short description of the package
     author='Prenil Sewmohan',  # Your name
@@ -11,6 +11,7 @@ setup(
         'psutil',  # Dependency for system metrics
         'matplotlib',  # Dependency for plotting graphs
         'numpy',  # Dependency for numerical operations
+        'gputil',  # Dependency for GPU metrics
     ],
     classifiers=[
         'Programming Language :: Python :: 3',

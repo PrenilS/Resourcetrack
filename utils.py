@@ -1,9 +1,12 @@
 import platform
 import psutil
 from datetime import datetime
+import GPUtil
 
 def gather_system_info():
     """Gather basic system information such as OS, CPU, and total memory."""
+    gpus = GPUtil.getGPUs()
+    gpu_info = [{"id": gpu.id, "name": gpu.name, "memory_total_gb": gpu.memoryTotal / 1024} for gpu in gpus]
     return {
         "os": platform.system(),
         "os_version": platform.version(),
@@ -12,6 +15,7 @@ def gather_system_info():
         "python_version": platform.python_version(),
         "cpu_count": psutil.cpu_count(),
         "total_memory_gb": psutil.virtual_memory().total / (1024 ** 3),  # Convert bytes to GB
+        "gpus": gpu_info if gpus else "No GPUs found",
     }
 
 def collect_resource_stats():
