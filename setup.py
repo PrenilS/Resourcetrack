@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='resourcetrack',  # The name of your package
     version='0.1.1',  # Version number
-    packages=['resourcetrack'],  # Automatically find all packages in this directory
+    packages=find_packages(),  # Automatically find all packages in this directory
     description='A package for tracking and recording system metrics during data science workloads.',  # Short description of the package
     author='Prenil Sewmohan',  # Your name
     author_email='prenil.s@gmail.com',  # Your contact email
